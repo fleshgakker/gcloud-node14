@@ -15,7 +15,7 @@ RUN apk add --no-cache \
 	autoconf \
 	automake \
 	libtool \
-	buildbase \
+	build-base \
 	pkgconf \
 	nasm
 
