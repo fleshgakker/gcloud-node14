@@ -13,7 +13,11 @@ RUN apk add --no-cache \
 	tar \
 	gzip \
 	autoconf \
-	automake
+	automake \
+	libtool \
+	buildbase \
+	pkgconf \
+	nasm
 
 ENV CLOUDSDK_PYTHON_SITEPACKAGES 1
 RUN wget http://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.zip && unzip google-cloud-sdk.zip && rm google-cloud-sdk.zip
